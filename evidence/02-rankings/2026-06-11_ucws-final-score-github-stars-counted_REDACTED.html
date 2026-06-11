@@ -1,0 +1,2955 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UCWS 2026 总分排名（GitHub Stars 计入用户票）</title>
+  <style>
+    :root {
+      --ink:#171717; --muted:#667085; --paper:#f4f1ea; --panel:#fffdf8; --line:#ddd3c4;
+      --red:#b73b2f; --teal:#1f756f; --blue:#2c5d90; --gold:#b27a22;
+      --shadow:0 22px 70px rgba(56,43,26,.14);
+    }
+    *{box-sizing:border-box} body{margin:0;color:var(--ink);background:var(--paper);font-family:"Microsoft YaHei UI","Microsoft YaHei",sans-serif}
+    .shell{width:min(1800px,calc(100vw - 32px));margin:26px auto 42px}
+    .hero{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:end;padding:28px;background:rgba(255,253,248,.92);border:1px solid rgba(23,23,23,.14);box-shadow:var(--shadow)}
+    h1{margin:0;font-size:clamp(30px,4vw,56px);line-height:1;font-weight:900;letter-spacing:0}
+    .subtitle{margin:12px 0 0;max-width:980px;color:var(--muted);line-height:1.75;font-size:14px}
+    .stamp{border:2px solid var(--red);color:var(--red);padding:12px 16px;font-weight:900;transform:rotate(-2deg);background:#fff7f3}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+    .card{background:var(--panel);border:1px solid var(--line);padding:15px;box-shadow:0 10px 28px rgba(56,43,26,.08)}
+    .card span{display:block;color:var(--muted);font-size:12px} .card strong{display:block;margin-top:5px;font-size:24px}
+    .toolbar{display:flex;gap:10px;align-items:center;margin:14px 0} input{height:40px;width:360px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:0 12px;font-size:14px}
+    .table-shell{overflow:auto;max-height:calc(100vh - 250px);border:1px solid var(--line);background:var(--panel);box-shadow:var(--shadow)}
+    table{border-collapse:separate;border-spacing:0;width:max-content;min-width:100%}
+    th{position:sticky;top:0;z-index:2;background:#1f2937;color:#fff;padding:10px 12px;text-align:left;font-size:12px;white-space:nowrap}
+    td{padding:10px 12px;border-bottom:1px solid #ece7dd;border-right:1px solid #f1ede6;font-size:13px;vertical-align:top}
+    tr:nth-child(even)td{background:#fcfaf6} .rank{font-weight:900;color:var(--red);font-size:18px;text-align:center}
+    .project strong{display:block;min-width:260px} .project span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+    .num{text-align:right;font-variant-numeric:tabular-nums} .strong{font-weight:900;color:var(--teal)} .muted{color:var(--muted)} .gold{color:var(--gold);font-weight:800}
+    .total{font-size:16px;font-weight:900;color:var(--red)} .links a{display:inline-block;margin-right:6px;color:var(--blue);font-weight:700;text-decoration:none}
+    @media(max-width:900px){.hero{display:block}.cards{grid-template-columns:repeat(2,1fr)}input{width:100%}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <h1>UCWS 2026 总分排名</h1>
+        <p class="subtitle">本版已将 GitHub Stars 加入用户投票数：计星后用户票 = 原用户票 + GitHub Stars。社区分仍按 30 分折算，评委分 40 分，AI 分 30 分，总分满分 100。</p>
+      </div>
+      <div class="stamp">Stars 已计入用户票</div>
+    </section>
+    <section class="cards">
+      <div class="card"><span>项目数</span><strong>206</strong></div>
+      <div class="card"><span>计星后最高用户票</span><strong>2196</strong></div>
+      <div class="card"><span>当前第一名</span><strong>Sangria</strong></div>
+      <div class="card"><span>平均总分</span><strong>24.1</strong></div>
+    </section>
+    <div class="toolbar"><input id="search" placeholder="搜索项目、作者、赛道..."></div>
+    <div class="table-shell">
+      <table id="ranking">
+        <thead>
+          <tr>
+            <th>总排名</th><th>项目</th><th>赛道</th><th>计星后用户票</th><th>原用户票</th><th>GitHub Stars</th>
+            <th>社区分(30)</th><th>评委票</th><th>评委分(40)</th><th>AI分(30)</th><th>总分(100)</th><th>链接</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr data-search="sangria jaredee2003 skill,application">
+              <td class="rank">1</td>
+              <td class="project"><strong>Sangria</strong><span>jaredee2003</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">95</td>
+              <td class="num muted">95</td>
+              <td class="num gold">0</td>
+              <td class="num">1.3</td>
+              <td class="num">3</td>
+              <td class="num">40</td>
+              <td class="num">23.1</td>
+              <td class="num total">64.4</td>
+              <td class="links"><a href="https://youtu.be/rJ5XtrUPdlw" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/GTG-Labs/sangria" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="tiara: ai-driven cognitive companion for early dementia detection azhemaaris application">
+              <td class="rank">2</td>
+              <td class="project"><strong>TIARA: AI-Driven Cognitive Companion for Early Dementia Detection</strong><span>azhemaaris</span></td>
+              <td>Application</td>
+              <td class="num strong">153</td>
+              <td class="num muted">149</td>
+              <td class="num gold">4</td>
+              <td class="num">2.09</td>
+              <td class="num">2</td>
+              <td class="num">26.67</td>
+              <td class="num">25.6</td>
+              <td class="num total">54.36</td>
+              <td class="links"><a href="https://drive.google.com/file/d/1fHME-ELCpVAE5aFMNyfa-U_kCpMVKXEA/view?usp=sharing" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Azkasubhan/TIARA" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="openless liaonur373 application">
+              <td class="rank">3</td>
+              <td class="project"><strong>openless</strong><span>liaonur373</span></td>
+              <td>Application</td>
+              <td class="num strong">2196</td>
+              <td class="num muted">55</td>
+              <td class="num gold">2141</td>
+              <td class="num">30</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.6</td>
+              <td class="num total">53.6</td>
+              <td class="links"><a href="https://openless.top/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Open-Less/openless" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="eatlah thisishowen application">
+              <td class="rank">4</td>
+              <td class="project"><strong>eatlah</strong><span>thisishowen</span></td>
+              <td>Application</td>
+              <td class="num strong">60</td>
+              <td class="num muted">60</td>
+              <td class="num gold">0</td>
+              <td class="num">0.82</td>
+              <td class="num">2</td>
+              <td class="num">26.67</td>
+              <td class="num">22.2</td>
+              <td class="num total">49.69</td>
+              <td class="links"><a href="https://eatlah.lovable.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/thisishowen-spec/eatlah" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="zeal wish xinlise agent,application">
+              <td class="rank">5</td>
+              <td class="project"><strong>ZEAL WISH</strong><span>xinlise</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">31</td>
+              <td class="num muted">31</td>
+              <td class="num gold">0</td>
+              <td class="num">0.42</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">28.4</td>
+              <td class="num total">42.16</td>
+              <td class="links"><a href="http://43.133.22.250:3000" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/KINGKAZMAX/OCWORLD-WEB" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="lucky os austen application">
+              <td class="rank">6</td>
+              <td class="project"><strong>Lucky OS</strong><span>Austen</span></td>
+              <td>Application</td>
+              <td class="num strong">70</td>
+              <td class="num muted">69</td>
+              <td class="num gold">1</td>
+              <td class="num">0.96</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">27.4</td>
+              <td class="num total">41.69</td>
+              <td class="links"><a href="https://sum-sink-cached-ears.trycloudflare.com/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Akika404/ucws-singapore-hackathon-2026" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="investment detective md skill,deepresearch">
+              <td class="rank">7</td>
+              <td class="project"><strong>Investment Detective</strong><span>Md</span></td>
+              <td>Skill,DeepResearch</td>
+              <td class="num strong">156</td>
+              <td class="num muted">156</td>
+              <td class="num gold">0</td>
+              <td class="num">2.13</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">25.8</td>
+              <td class="num total">41.26</td>
+              <td class="links"><a href="https://www.askmbb.com/investment" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Wild-KD/ucws-deep-research" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="tokenmaster ai hsiidk068 agent,deepresearch">
+              <td class="rank">8</td>
+              <td class="project"><strong>TokenMaster AI</strong><span>hsiidk068</span></td>
+              <td>Agent,DeepResearch</td>
+              <td class="num strong">28</td>
+              <td class="num muted">27</td>
+              <td class="num gold">1</td>
+              <td class="num">0.38</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">26.3</td>
+              <td class="num total">40.02</td>
+              <td class="links"><a href="https://spiffy-axolotl-ba2764.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/EricRan626/tokenmaster-ai" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="compagnon éveil peter application">
+              <td class="rank">9</td>
+              <td class="project"><strong>Compagnon Éveil</strong><span>peter</span></td>
+              <td>Application</td>
+              <td class="num strong">179</td>
+              <td class="num muted">179</td>
+              <td class="num gold">0</td>
+              <td class="num">2.45</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">24</td>
+              <td class="num total">39.78</td>
+              <td class="links"><a href="https://compagnon-eveil.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Iamsohungrynow/anything_companion" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="quack ai q402 lynnling0v0 skill,application">
+              <td class="rank">10</td>
+              <td class="project"><strong>Quack AI Q402</strong><span>lynnling0v0</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">15</td>
+              <td class="num muted">15</td>
+              <td class="num gold">0</td>
+              <td class="num">0.2</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">25.6</td>
+              <td class="num total">39.14</td>
+              <td class="links"><a href="https://q402.quackai.ai" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/bitgett/q402-mcp" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ai math tutor zico agent,application">
+              <td class="rank">11</td>
+              <td class="project"><strong>AI Math Tutor</strong><span>Zico</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">55</td>
+              <td class="num muted">55</td>
+              <td class="num gold">0</td>
+              <td class="num">0.75</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">24.6</td>
+              <td class="num total">38.68</td>
+              <td class="links"><a href="https://www.youtube.com/watch?v=jA-8cryWO5c" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/zicojiao/ai-math-tutor" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="buzo sayyidkhan92 application,agent">
+              <td class="rank">12</td>
+              <td class="project"><strong>Buzo</strong><span>sayyidkhan92</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">68</td>
+              <td class="num muted">68</td>
+              <td class="num gold">0</td>
+              <td class="num">0.93</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">23.9</td>
+              <td class="num total">38.16</td>
+              <td class="links"><a href="https://gr-frontend-dev.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/gigradarco/gr-frontend" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="donegraph.space kevin skill">
+              <td class="rank">13</td>
+              <td class="project"><strong>DoneGraph.space</strong><span>kevin</span></td>
+              <td>Skill</td>
+              <td class="num strong">56</td>
+              <td class="num muted">31</td>
+              <td class="num gold">25</td>
+              <td class="num">0.77</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">23.7</td>
+              <td class="num total">37.8</td>
+              <td class="links"><a href="https://donegraph.space/assets/donegraph-demo-15s.mp4" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/serein431/DoneGraph" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="halo- every unseen momment carries its own halo leoldonz agent,application">
+              <td class="rank">14</td>
+              <td class="project"><strong>HALO- Every unseen momment carries its own halo</strong><span>leoldonz</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">103</td>
+              <td class="num muted">103</td>
+              <td class="num gold">0</td>
+              <td class="num">1.41</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">22.9</td>
+              <td class="num total">37.64</td>
+              <td class="links"><a href="https://halo-mvp-ten.vercel.app/demo" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/leoldonz-sudo/halo-mvp" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="xhs-market-radar ian skill,deepresearch">
+              <td class="rank">15</td>
+              <td class="project"><strong>xhs-market-radar</strong><span>Ian</span></td>
+              <td>Skill,DeepResearch</td>
+              <td class="num strong">67</td>
+              <td class="num muted">66</td>
+              <td class="num gold">1</td>
+              <td class="num">0.92</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">22.5</td>
+              <td class="num total">36.75</td>
+              <td class="links"><a href="https://xhs-radar-demo.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/fantasea-code/xhs-market-radar" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="studybuddy ai anshu agent,application">
+              <td class="rank">16</td>
+              <td class="project"><strong>StudyBuddy AI</strong><span>Anshu</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">13</td>
+              <td class="num muted">13</td>
+              <td class="num gold">0</td>
+              <td class="num">0.18</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">23.2</td>
+              <td class="num total">36.71</td>
+              <td class="links"><a href="https://studybuddy-ai-nwdmyr6fuczannu9kc7ewv.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/anshikaaaa17/studybuddy-ai" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="game studio control plane(studio os) visaruths agent,deepresearch">
+              <td class="rank">17</td>
+              <td class="project"><strong>Game Studio Control Plane(STUDIO OS)</strong><span>visaruths</span></td>
+              <td>Agent,DeepResearch</td>
+              <td class="num strong">10</td>
+              <td class="num muted">10</td>
+              <td class="num gold">0</td>
+              <td class="num">0.14</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">22.9</td>
+              <td class="num total">36.37</td>
+              <td class="links"><a href="https://web-production-fb6a8.up.railway.app/dashboard" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/agentic-game-studio/game-control-plane" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="deepthinker chengyuchen agent,application">
+              <td class="rank">18</td>
+              <td class="project"><strong>DeepThinker</strong><span>ChengYuchen</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">9</td>
+              <td class="num muted">9</td>
+              <td class="num gold">0</td>
+              <td class="num">0.12</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">22.2</td>
+              <td class="num total">35.66</td>
+              <td class="links"><a href="https://chen2025ntu-ctrl.github.io/deepthinker-demo/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/chen2025ntu-ctrl/DeepThinker_app" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="constellacare dhejassri application">
+              <td class="rank">19</td>
+              <td class="project"><strong>ConstellaCare</strong><span>dhejassri</span></td>
+              <td>Application</td>
+              <td class="num strong">10</td>
+              <td class="num muted">10</td>
+              <td class="num gold">0</td>
+              <td class="num">0.14</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">21.7</td>
+              <td class="num total">35.17</td>
+              <td class="links"><a href="https://constella-care.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/dhejassrib/ConstellaCare" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="dirtycat zhuoran application">
+              <td class="rank">20</td>
+              <td class="project"><strong>DirtyCat</strong><span>Zhuoran</span></td>
+              <td>Application</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">1</td>
+              <td class="num">13.33</td>
+              <td class="num">18.8</td>
+              <td class="num total">32.19</td>
+              <td class="links"><a href="https://huggingface.co/spaces/guuuuuuuozi/DirtyCat" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/GuoZhuoRan/dirty-cat" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="realskill cyb101003 agent,skill">
+              <td class="rank">21</td>
+              <td class="project"><strong>RealSkill</strong><span>cyb101003</span></td>
+              <td>Agent,Skill</td>
+              <td class="num strong">91</td>
+              <td class="num muted">89</td>
+              <td class="num gold">2</td>
+              <td class="num">1.24</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26.1</td>
+              <td class="num total">27.34</td>
+              <td class="links"><a href="https://realskill.asia/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/cyb101003/rednote-tools" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="skilltrust qybaihe skill,agent">
+              <td class="rank">22</td>
+              <td class="project"><strong>SkillTrust</strong><span>qybaihe</span></td>
+              <td>Skill,Agent</td>
+              <td class="num strong">147</td>
+              <td class="num muted">144</td>
+              <td class="num gold">3</td>
+              <td class="num">2.01</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.2</td>
+              <td class="num total">27.21</td>
+              <td class="links"><a href="https://skilltrust.classby.cn" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/qybaihe/SkillTrust" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="signalscout ai guoyichen120 agent,application">
+              <td class="rank">23</td>
+              <td class="project"><strong>SignalScout AI</strong><span>guoyichen120</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">13</td>
+              <td class="num muted">13</td>
+              <td class="num gold">0</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">27</td>
+              <td class="num total">27.18</td>
+              <td class="links"><a href="https://sunnyraymond.github.io/SignalScout-AI/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/SunnyRaymond/SignalScout-AI" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="cozmio qingfeng agent">
+              <td class="rank">24</td>
+              <td class="project"><strong>Cozmio</strong><span>qingfeng</span></td>
+              <td>Agent</td>
+              <td class="num strong">31</td>
+              <td class="num muted">31</td>
+              <td class="num gold">0</td>
+              <td class="num">0.42</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26.7</td>
+              <td class="num total">27.12</td>
+              <td class="links"><a href="https://cozmio.net" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/147qaz258-ead/cozmio" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="bet decoder henry agent,deepresearch">
+              <td class="rank">25</td>
+              <td class="project"><strong>Bet Decoder</strong><span>Henry</span></td>
+              <td>Agent,DeepResearch</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26.9</td>
+              <td class="num total">26.98</td>
+              <td class="links"><a href="https://0xmyh-bet-decoder.hf.space" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/hnaymyh123-henry/bet-decoder" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="valuationlens ttan1128526 deepresearch">
+              <td class="rank">26</td>
+              <td class="project"><strong>ValuationLens</strong><span>ttan1128526</span></td>
+              <td>DeepResearch</td>
+              <td class="num strong">13</td>
+              <td class="num muted">13</td>
+              <td class="num gold">0</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26.8</td>
+              <td class="num total">26.98</td>
+              <td class="links"><a href="https://miromind-production.up.railway.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/tt11285/Miromind" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="cello veee application,agent">
+              <td class="rank">27</td>
+              <td class="project"><strong>cello</strong><span>veee</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">13</td>
+              <td class="num muted">12</td>
+              <td class="num gold">1</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26.7</td>
+              <td class="num total">26.88</td>
+              <td class="links"><a href="https://hscuuhgctunneld.top/cello/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/veron-spec/E-commerce-Operations-Platform" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="singapore.am huaizhi application,agent">
+              <td class="rank">28</td>
+              <td class="project"><strong>singapore.am</strong><span>huaizhi</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">10</td>
+              <td class="num muted">10</td>
+              <td class="num gold">0</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26.4</td>
+              <td class="num total">26.54</td>
+              <td class="links"><a href="https://singapore.am" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/huaizhic/singapoream-agentic-data-pipeline" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="aoshield fred application">
+              <td class="rank">29</td>
+              <td class="project"><strong>AoShield</strong><span>Fred</span></td>
+              <td>Application</td>
+              <td class="num strong">10</td>
+              <td class="num muted">10</td>
+              <td class="num gold">0</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26.2</td>
+              <td class="num total">26.34</td>
+              <td class="links"><a href="https://www.aoshield.cn" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ChrisXYF/AgentGuard" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="mocam rippada deepresearch,application">
+              <td class="rank">30</td>
+              <td class="project"><strong>MoCam</strong><span>rippada</span></td>
+              <td>DeepResearch,Application</td>
+              <td class="num strong">38</td>
+              <td class="num muted">38</td>
+              <td class="num gold">0</td>
+              <td class="num">0.52</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.8</td>
+              <td class="num total">26.32</td>
+              <td class="links"><a href="https://mocam.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ripperan/mocam-ai-wardrobe" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="cyberverse dsd2077 agent">
+              <td class="rank">31</td>
+              <td class="project"><strong>CyberVerse</strong><span>dsd2077</span></td>
+              <td>Agent</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26.2</td>
+              <td class="num total">26.31</td>
+              <td class="links"><a href="https://www.cyberverse.cc" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/dsd2077/CyberVerse" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="helio jenny agent">
+              <td class="rank">32</td>
+              <td class="project"><strong>Helio</strong><span>Jenny</span></td>
+              <td>Agent</td>
+              <td class="num strong">241</td>
+              <td class="num muted">162</td>
+              <td class="num gold">79</td>
+              <td class="num">3.29</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23</td>
+              <td class="num total">26.29</td>
+              <td class="links"><a href="https://www.helio.im" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/heliohq/ship" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="damc jayden skill">
+              <td class="rank">33</td>
+              <td class="project"><strong>DAMC</strong><span>Jayden</span></td>
+              <td>Skill</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26.1</td>
+              <td class="num total">26.2</td>
+              <td class="links"><a href="https://damc.space/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Jayden72Huang/damc-platform" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="llm counsil annujollymec skill,agent">
+              <td class="rank">34</td>
+              <td class="project"><strong>LLM Counsil</strong><span>annujollymec</span></td>
+              <td>Skill,Agent</td>
+              <td class="num strong">12</td>
+              <td class="num muted">12</td>
+              <td class="num gold">0</td>
+              <td class="num">0.16</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26</td>
+              <td class="num total">26.16</td>
+              <td class="links"><a href="https://llm-counsil.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/annu12340/LLM-Counsil" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="tracemind vle326227 deepresearch">
+              <td class="rank">35</td>
+              <td class="project"><strong>TraceMind</strong><span>vle326227</span></td>
+              <td>DeepResearch</td>
+              <td class="num strong">9</td>
+              <td class="num muted">9</td>
+              <td class="num gold">0</td>
+              <td class="num">0.12</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">26</td>
+              <td class="num total">26.12</td>
+              <td class="links"><a href="https://financial-research-agent-production-4ea4.up.railway.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/wlex-club/financial-research-agent" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="guzhi zouzeren application">
+              <td class="rank">36</td>
+              <td class="project"><strong>guzhi</strong><span>zouzeren</span></td>
+              <td>Application</td>
+              <td class="num strong">14</td>
+              <td class="num muted">14</td>
+              <td class="num gold">0</td>
+              <td class="num">0.19</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.9</td>
+              <td class="num total">26.09</td>
+              <td class="links"><a href="https://www.guzhi.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Anthony-Zou/Guzhi" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="mira light rickyangyuhan application,agent">
+              <td class="rank">37</td>
+              <td class="project"><strong>Mira Light</strong><span>rickyangyuhan</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">9</td>
+              <td class="num muted">9</td>
+              <td class="num gold">0</td>
+              <td class="num">0.12</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.8</td>
+              <td class="num total">25.92</td>
+              <td class="links"><a href="https://v.douyin.com/FcZexvsUEGU/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/JunkaiWang-TheoPhy/mira-ucws-singapore-2026" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="tripstory glenhan9 application">
+              <td class="rank">38</td>
+              <td class="project"><strong>TripStory</strong><span>glenhan9</span></td>
+              <td>Application</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.8</td>
+              <td class="num total">25.88</td>
+              <td class="links"><a href="https://mangasmith.com/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/namprice227/trendsync.git" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="seek yw172438 agent,skill">
+              <td class="rank">39</td>
+              <td class="project"><strong>seek</strong><span>yw172438</span></td>
+              <td>Agent,Skill</td>
+              <td class="num strong">22</td>
+              <td class="num muted">8</td>
+              <td class="num gold">14</td>
+              <td class="num">0.3</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.5</td>
+              <td class="num total">25.8</td>
+              <td class="links"><a href="https://seek.whyiyhw.com/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/whyiyhw/seek" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ai remote recruiting platform rwdaoclub application,agent">
+              <td class="rank">40</td>
+              <td class="project"><strong>AI Remote Recruiting Platform</strong><span>rwdaoclub</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.7</td>
+              <td class="num total">25.75</td>
+              <td class="links"><a href="https://www.rwnomad.com/en" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/RW-Remote-work/RW-public" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="yujee: ai magazine yvaineyu9 agent,application">
+              <td class="rank">41</td>
+              <td class="project"><strong>Yujee: AI Magazine</strong><span>yvaineyu9</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.6</td>
+              <td class="num total">25.68</td>
+              <td class="links"><a href="https://yujeeai.com" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/yvaineyu9/yujee-showcase" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="bill vampire super666joey application,agent">
+              <td class="rank">42</td>
+              <td class="project"><strong>Bill Vampire</strong><span>super666joey</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">5</td>
+              <td class="num muted">4</td>
+              <td class="num gold">1</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.6</td>
+              <td class="num total">25.67</td>
+              <td class="links"><a href="https://billvampire.com" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/JoeyZhaoUX/Bill-Vampire" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="anneal martinalee001 application,agent">
+              <td class="rank">43</td>
+              <td class="project"><strong>Anneal</strong><span>martinalee001</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">15</td>
+              <td class="num muted">12</td>
+              <td class="num gold">3</td>
+              <td class="num">0.2</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.4</td>
+              <td class="num total">25.6</td>
+              <td class="links"><a href="https://annealfi.io/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/whatthehackinsg/Anneal-for-colosseum" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="gideon chandan agent,deepresearch">
+              <td class="rank">44</td>
+              <td class="project"><strong>Gideon</strong><span>chandan</span></td>
+              <td>Agent,DeepResearch</td>
+              <td class="num strong">13</td>
+              <td class="num muted">13</td>
+              <td class="num gold">0</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.4</td>
+              <td class="num total">25.58</td>
+              <td class="links"><a href="https://gideon-ai-ae305.web.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/sh-xoidlabs/gideon" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="truetrack vinay skill">
+              <td class="rank">45</td>
+              <td class="project"><strong>TrueTrack</strong><span>vinay</span></td>
+              <td>Skill</td>
+              <td class="num strong">13</td>
+              <td class="num muted">13</td>
+              <td class="num gold">0</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.4</td>
+              <td class="num total">25.58</td>
+              <td class="links"><a href="https://truetrack.pages.dev/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/VinaySawantSS/truetrack" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="spoor chengbutang agent,application">
+              <td class="rank">46</td>
+              <td class="project"><strong>Spoor</strong><span>chengbutang</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">10</td>
+              <td class="num muted">4</td>
+              <td class="num gold">6</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.4</td>
+              <td class="num total">25.54</td>
+              <td class="links"><a href="https://scribe-ai-canvas.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/iimorning/spoor" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="talkalong — interruptible narration engine leefey application">
+              <td class="rank">47</td>
+              <td class="project"><strong>talkalong — Interruptible Narration Engine</strong><span>Leefey</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.4</td>
+              <td class="num total">25.5</td>
+              <td class="links"><a href="https://talkalong-tutor.onrender.com/tutor" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/clfhaha1234/talkalong" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="repps derrick application">
+              <td class="rank">48</td>
+              <td class="project"><strong>Repps</strong><span>Derrick</span></td>
+              <td>Application</td>
+              <td class="num strong">18</td>
+              <td class="num muted">18</td>
+              <td class="num gold">0</td>
+              <td class="num">0.25</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.2</td>
+              <td class="num total">25.45</td>
+              <td class="links"><a href="https://www.repps.pro" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/drock8/repps" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="re-forge guptashine5002 skill,agent">
+              <td class="rank">49</td>
+              <td class="project"><strong>re-forge</strong><span>guptashine5002</span></td>
+              <td>Skill,Agent</td>
+              <td class="num strong">131</td>
+              <td class="num muted">131</td>
+              <td class="num gold">0</td>
+              <td class="num">1.79</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.6</td>
+              <td class="num total">25.39</td>
+              <td class="links"><a href="https://re-forge.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Akasxh/re-forge" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="reposcape binaryfree skill,application">
+              <td class="rank">50</td>
+              <td class="project"><strong>RepoScape</strong><span>binaryfree</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">10</td>
+              <td class="num muted">8</td>
+              <td class="num gold">2</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">25.2</td>
+              <td class="num total">25.34</td>
+              <td class="links"><a href="https://reposcape.pages.dev/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ThomasLix7/RepoScape" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="yozu ai lorettal agent">
+              <td class="rank">51</td>
+              <td class="project"><strong>Yozu AI</strong><span>LorettaL</span></td>
+              <td>Agent</td>
+              <td class="num strong">88</td>
+              <td class="num muted">85</td>
+              <td class="num gold">3</td>
+              <td class="num">1.2</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.1</td>
+              <td class="num total">25.3</td>
+              <td class="links"><a href="https://www.yozu.me" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/lorettawillow-lele/yozu-web" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ai native expert network helpandgrow application">
+              <td class="rank">52</td>
+              <td class="project"><strong>AI Native Expert Network</strong><span>HelpAndGrow</span></td>
+              <td>Application</td>
+              <td class="num strong">13</td>
+              <td class="num muted">13</td>
+              <td class="num gold">0</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.9</td>
+              <td class="num total">25.08</td>
+              <td class="links"><a href="https://www.help-and-grow.com" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Help-And-Grow/expert-network" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="launchlens xiyi application">
+              <td class="rank">53</td>
+              <td class="project"><strong>LaunchLens</strong><span>xiyi</span></td>
+              <td>Application</td>
+              <td class="num strong">169</td>
+              <td class="num muted">169</td>
+              <td class="num gold">0</td>
+              <td class="num">2.31</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.7</td>
+              <td class="num total">25.01</td>
+              <td class="links"><a href="https://wangsiyi7.github.io/launchlens/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/wangsiyi7/launchlens" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="popwiz popwiz application,agent">
+              <td class="rank">54</td>
+              <td class="project"><strong>POPWIZ</strong><span>POPWIZ</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.9</td>
+              <td class="num total">25</td>
+              <td class="links"><a href="https://www.popwiz.ai/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/kizzhang/POPWIZ_public" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="learnllama.beta teisha application">
+              <td class="rank">55</td>
+              <td class="project"><strong>Learnllama.beta</strong><span>Teisha</span></td>
+              <td>Application</td>
+              <td class="num strong">21</td>
+              <td class="num muted">21</td>
+              <td class="num gold">0</td>
+              <td class="num">0.29</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.7</td>
+              <td class="num total">24.99</td>
+              <td class="links"><a href="https://glistening-belekoy-385beb.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/t-code-io/Hackathon-UCWS-2026-Learllama.beta" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="discover sg: lumi ashvik application">
+              <td class="rank">56</td>
+              <td class="project"><strong>Discover SG: LUMI</strong><span>Ashvik</span></td>
+              <td>Application</td>
+              <td class="num strong">24</td>
+              <td class="num muted">24</td>
+              <td class="num gold">0</td>
+              <td class="num">0.33</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.6</td>
+              <td class="num total">24.93</td>
+              <td class="links"><a href="https://cosmic-torrone-76de4b.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Ashvik1729/Hackathon-UCWS-2026-Discover-SG-LUMI" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="veramesh sdk loraynelim skill">
+              <td class="rank">57</td>
+              <td class="project"><strong>VeraMesh SDK</strong><span>loraynelim</span></td>
+              <td>Skill</td>
+              <td class="num strong">15</td>
+              <td class="num muted">15</td>
+              <td class="num gold">0</td>
+              <td class="num">0.2</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.7</td>
+              <td class="num total">24.9</td>
+              <td class="links"><a href="https://agent-6a22ce96e6baa30c11--startling-sable-a0e2d3.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/jraykne/VeraMesh-SDK" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="aria: autonomous research &amp; insight agent minleafu agent">
+              <td class="rank">58</td>
+              <td class="project"><strong>ARIA: Autonomous Research &amp; Insight Agent</strong><span>MinLeafu</span></td>
+              <td>Agent</td>
+              <td class="num strong">9</td>
+              <td class="num muted">9</td>
+              <td class="num gold">0</td>
+              <td class="num">0.12</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.7</td>
+              <td class="num total">24.82</td>
+              <td class="links"><a href="https://minleafu.github.io/ARIA-Autonomous-Research-Insight-Agent/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/MinLeafu/ARIA-Autonomous-Research-Insight-Agent" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="conductgene swarm / attestrwa iamfuyoh agent,application">
+              <td class="rank">59</td>
+              <td class="project"><strong>ConductGene Swarm / AttestRWA</strong><span>iamfuyoh</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">6</td>
+              <td class="num gold">1</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.7</td>
+              <td class="num total">24.8</td>
+              <td class="links"><a href="https://youtu.be/5wIBi-HkK9Y" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/FUYOH666/conductgene-swarm" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="frontmatter q agent,application">
+              <td class="rank">60</td>
+              <td class="project"><strong>FrontMatter</strong><span>Q</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">181</td>
+              <td class="num muted">180</td>
+              <td class="num gold">1</td>
+              <td class="num">2.47</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.3</td>
+              <td class="num total">24.77</td>
+              <td class="links"><a href="https://frontmatter.xyyzzz.xyz" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/yechixia0625/FrontMatter" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="geckco ai wyx1003 application,agent">
+              <td class="rank">61</td>
+              <td class="project"><strong>GeckCo AI</strong><span>wyx1003</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">9</td>
+              <td class="num muted">9</td>
+              <td class="num gold">0</td>
+              <td class="num">0.12</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.6</td>
+              <td class="num total">24.72</td>
+              <td class="links"><a href="https://boba-and-chaos-536.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Messiah64/Boba-and-Chaos" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="momoai cli neko agent">
+              <td class="rank">62</td>
+              <td class="project"><strong>MOMOAI CLI</strong><span>neko</span></td>
+              <td>Agent</td>
+              <td class="num strong">121</td>
+              <td class="num muted">118</td>
+              <td class="num gold">3</td>
+              <td class="num">1.65</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23</td>
+              <td class="num total">24.65</td>
+              <td class="links"><a href="https://youtu.be/GEmBt9agjBE" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/SushangLi/momoai-cli" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="loci — memory palace for ai spacechaochao skill">
+              <td class="rank">63</td>
+              <td class="project"><strong>Loci — Memory Palace for AI</strong><span>spacechaochao</span></td>
+              <td>Skill</td>
+              <td class="num strong">10</td>
+              <td class="num muted">10</td>
+              <td class="num gold">0</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.5</td>
+              <td class="num total">24.64</td>
+              <td class="links"><a href="https://www.tryloci.com/landing/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/codesstar/loci" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="quant intern developercoooper agent">
+              <td class="rank">64</td>
+              <td class="project"><strong>Quant Intern</strong><span>developercoooper</span></td>
+              <td>Agent</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.5</td>
+              <td class="num total">24.58</td>
+              <td class="links"><a href="https://co0oper.github.io/quant-intern/#results" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/CO0Oper/quant-intern" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ayatori nexus albert skill">
+              <td class="rank">65</td>
+              <td class="project"><strong>Ayatori Nexus</strong><span>Albert</span></td>
+              <td>Skill</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.4</td>
+              <td class="num total">24.45</td>
+              <td class="links"><a href="https://yuxuansun123.github.io/cli-model-switcher/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/YuxuanSun123/cli-model-switcher" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="clawwork samzong application">
+              <td class="rank">66</td>
+              <td class="project"><strong>ClawWork</strong><span>samzong</span></td>
+              <td>Application</td>
+              <td class="num strong">526</td>
+              <td class="num muted">7</td>
+              <td class="num gold">519</td>
+              <td class="num">7.19</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">17.2</td>
+              <td class="num total">24.39</td>
+              <td class="links"><a href="https://github.com/clawwork-ai/clawwork" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/clawwork-ai/clawwork" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="rankr - 10x your seo visibility, autonomously binghengabellee agent,application">
+              <td class="rank">67</td>
+              <td class="project"><strong>Rankr - 10x Your SEO Visibility, Autonomously</strong><span>binghengabellee</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">37</td>
+              <td class="num muted">36</td>
+              <td class="num gold">1</td>
+              <td class="num">0.51</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.8</td>
+              <td class="num total">24.31</td>
+              <td class="links"><a href="https://youtu.be/Q8OaSs4zndw?si=0n5ubYroTGDqeJoe" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/abel123code/rankr" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="agentguard dora application">
+              <td class="rank">68</td>
+              <td class="project"><strong>AgentGuard</strong><span>Dora</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.2</td>
+              <td class="num total">24.3</td>
+              <td class="links"><a href="https://agentshield.site/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ChrisXYF/AgentGuard" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="act two – the persona archive lily005807abc application">
+              <td class="rank">69</td>
+              <td class="project"><strong>Act Two – The Persona Archive</strong><span>lily005807abc</span></td>
+              <td>Application</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24.2</td>
+              <td class="num total">24.27</td>
+              <td class="links"><a href="https://persona-vault-49c7d2fe.eazo.dev" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/lily005807-gif/persona-vault" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="cernify: ai-powered patent intelligence platform ianfeng application,agent">
+              <td class="rank">70</td>
+              <td class="project"><strong>Cernify: AI-Powered Patent Intelligence Platform</strong><span>ianfeng</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">15</td>
+              <td class="num muted">15</td>
+              <td class="num gold">0</td>
+              <td class="num">0.2</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24</td>
+              <td class="num total">24.2</td>
+              <td class="links"><a href="https://www.youtube.com/watch?v=jgG2NX9yF2I" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ianfksyd/cernify-robot-patent-risk-copilot" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="deepedge - us stocks self-evolving research engine xyy skill,deepresearch">
+              <td class="rank">71</td>
+              <td class="project"><strong>DeepEdge - US Stocks Self-Evolving Research Engine</strong><span>xyy</span></td>
+              <td>Skill,DeepResearch</td>
+              <td class="num strong">78</td>
+              <td class="num muted">78</td>
+              <td class="num gold">0</td>
+              <td class="num">1.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.1</td>
+              <td class="num total">24.17</td>
+              <td class="links"><a href="https://us-stock.vinex.top" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/VineINDalvik/us-stock-ibkr" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="pre-run token estimator alexis agent">
+              <td class="rank">72</td>
+              <td class="project"><strong>Pre-Run Token Estimator</strong><span>Alexis</span></td>
+              <td>Agent</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">24</td>
+              <td class="num total">24.11</td>
+              <td class="links"><a href="https://drive.google.com/file/d/1ip9w2CeS24L1Q_4SxlZm4kPXOKGhjPFa/view?usp=sharing" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Haosheng333/pre-run-token-estimator.git" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="finmind ai yigenfeng0707 agent">
+              <td class="rank">73</td>
+              <td class="project"><strong>FinMind AI</strong><span>yigenfeng0707</span></td>
+              <td>Agent</td>
+              <td class="num strong">12</td>
+              <td class="num muted">11</td>
+              <td class="num gold">1</td>
+              <td class="num">0.16</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.9</td>
+              <td class="num total">24.06</td>
+              <td class="links"><a href="https://finmind-ai-beta.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/yigenfeng0707-netizen/finmind-ai" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="repo rescue ranger annujolly17 skill,agent">
+              <td class="rank">74</td>
+              <td class="project"><strong>Repo Rescue Ranger</strong><span>annujolly17</span></td>
+              <td>Skill,Agent</td>
+              <td class="num strong">16</td>
+              <td class="num muted">16</td>
+              <td class="num gold">0</td>
+              <td class="num">0.22</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.7</td>
+              <td class="num total">23.92</td>
+              <td class="links"><a href="https://skills-track.onrender.com/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/annu12340/Skills-track" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="holodivination zimoyee application">
+              <td class="rank">75</td>
+              <td class="project"><strong>HoloDivination</strong><span>zimoyee</span></td>
+              <td>Application</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.7</td>
+              <td class="num total">23.81</td>
+              <td class="links"><a href="https://holodata.au/divination" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/HOLODATA-COM/HoloDestiny/tree/main" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="anime companion zeshan application">
+              <td class="rank">76</td>
+              <td class="project"><strong>Anime Companion</strong><span>zeshan</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.7</td>
+              <td class="num total">23.8</td>
+              <td class="links"><a href="https://yrd980.github.io/companion_chat/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Yrd980/companion_chat" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="cramai：all-in-one ai agent for learning and test preparation zhoutao skill,agent">
+              <td class="rank">77</td>
+              <td class="project"><strong>CramAI：All-in-One AI Agent for Learning and Test Preparation</strong><span>ZhouTao</span></td>
+              <td>Skill,Agent</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.7</td>
+              <td class="num total">23.8</td>
+              <td class="links"><a href="https://www.cramai.net/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/moments-ai-lab/cramai" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="firefly · multi-agent enterprise ai architecture for organizational intelligence jayjay agent,application">
+              <td class="rank">78</td>
+              <td class="project"><strong>Firefly · Multi-Agent Enterprise AI Architecture for Organizational Intelligence</strong><span>JayJay</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.7</td>
+              <td class="num total">23.77</td>
+              <td class="links"><a href="https://firefly-web-os-private.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Jay-0807/firefly-web-os" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="merit scout turtlesrqul7 agent,application">
+              <td class="rank">79</td>
+              <td class="project"><strong>Merit Scout</strong><span>turtlesrqul7</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">11</td>
+              <td class="num muted">11</td>
+              <td class="num gold">0</td>
+              <td class="num">0.15</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.6</td>
+              <td class="num total">23.75</td>
+              <td class="links"><a href="https://merit-scout.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/turtlesrqul/merit-scout" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="argus chaoqi application,deepresearch">
+              <td class="rank">80</td>
+              <td class="project"><strong>Argus</strong><span>Chaoqi</span></td>
+              <td>Application,DeepResearch</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.6</td>
+              <td class="num total">23.71</td>
+              <td class="links"><a href="https://argus-truth-engine.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Chaoqi31/argus-truth-engine" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="nomadic panlutingcn application">
+              <td class="rank">81</td>
+              <td class="project"><strong>Nomadic</strong><span>panlutingcn</span></td>
+              <td>Application</td>
+              <td class="num strong">37</td>
+              <td class="num muted">37</td>
+              <td class="num gold">0</td>
+              <td class="num">0.51</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.2</td>
+              <td class="num total">23.71</td>
+              <td class="links"><a href="https://nomadictree.io/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/panlutingcn/nomadic" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ootd (outfit of the day) tt11285 application">
+              <td class="rank">82</td>
+              <td class="project"><strong>OOTD (Outfit of the Day)</strong><span>tt11285</span></td>
+              <td>Application</td>
+              <td class="num strong">39</td>
+              <td class="num muted">39</td>
+              <td class="num gold">0</td>
+              <td class="num">0.53</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.1</td>
+              <td class="num total">23.63</td>
+              <td class="links"><a href="https://ootd-wardrobe-ai.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/tt11285/OOTD-Wardrobe-AI" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="finpilot ai muhammadrazakazi878 application">
+              <td class="rank">83</td>
+              <td class="project"><strong>Finpilot Ai</strong><span>muhammadrazakazi878</span></td>
+              <td>Application</td>
+              <td class="num strong">17</td>
+              <td class="num muted">17</td>
+              <td class="num gold">0</td>
+              <td class="num">0.23</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.4</td>
+              <td class="num total">23.63</td>
+              <td class="links"><a href="https://velocifin.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/muhammadrazakazi878-ship-it/finpilot-ai.git" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ai powered stock agent jaydenkam0927 agent,deepresearch">
+              <td class="rank">84</td>
+              <td class="project"><strong>AI Powered Stock Agent</strong><span>jaydenkam0927</span></td>
+              <td>Agent,DeepResearch</td>
+              <td class="num strong">0</td>
+              <td class="num muted">0</td>
+              <td class="num gold">0</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.6</td>
+              <td class="num total">23.6</td>
+              <td class="links"><a href="https://ai-powered-stock-agent.onrender.com/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Alixyvtte/ai-powered-stock-agent" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ai life arena wangheather662 deepresearch,application">
+              <td class="rank">85</td>
+              <td class="project"><strong>AI Life Arena</strong><span>wangheather662</span></td>
+              <td>DeepResearch,Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.5</td>
+              <td class="num total">23.6</td>
+              <td class="links"><a href="https://ai-life-arena.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/wangheather662-cmd/ai-life-arena" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="chingfan mahjong calculator mogiklabs application">
+              <td class="rank">86</td>
+              <td class="project"><strong>ChingFan Mahjong Calculator</strong><span>mogiklabs</span></td>
+              <td>Application</td>
+              <td class="num strong">12</td>
+              <td class="num muted">12</td>
+              <td class="num gold">0</td>
+              <td class="num">0.16</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.4</td>
+              <td class="num total">23.56</td>
+              <td class="links"><a href="https://ching-fan-mahjong.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/MOGIKLABS/-ChingFan-Mahjong" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="synapse dgzbro application,deepresearch">
+              <td class="rank">87</td>
+              <td class="project"><strong>Synapse</strong><span>DGZbro</span></td>
+              <td>Application,DeepResearch</td>
+              <td class="num strong">26</td>
+              <td class="num muted">5</td>
+              <td class="num gold">21</td>
+              <td class="num">0.36</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.2</td>
+              <td class="num total">23.56</td>
+              <td class="links"><a href="https://www.youtube.com/watch?v=3FjaOnHsJBY" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/dddgzeth/Synapse" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="kursa 1203kk06 application,agent">
+              <td class="rank">88</td>
+              <td class="project"><strong>Kursa</strong><span>1203kk06</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">10</td>
+              <td class="num muted">8</td>
+              <td class="num gold">2</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.4</td>
+              <td class="num total">23.54</td>
+              <td class="links"><a href="https://kursa-web.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/shreeraj-u/kursa" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="real deal yashwanthkrishna169 application,agent">
+              <td class="rank">89</td>
+              <td class="project"><strong>Real Deal</strong><span>yashwanthkrishna169</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.2</td>
+              <td class="num total">23.3</td>
+              <td class="links"><a href="https://real-deal-wine.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/yashwanth-3000/real-deal" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="signalhire nobita deepresearch,agent">
+              <td class="rank">90</td>
+              <td class="project"><strong>SignalHire</strong><span>nobita</span></td>
+              <td>DeepResearch,Agent</td>
+              <td class="num strong">12</td>
+              <td class="num muted">12</td>
+              <td class="num gold">0</td>
+              <td class="num">0.16</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.1</td>
+              <td class="num total">23.26</td>
+              <td class="links"><a href="https://signal-hire-eight.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/BIGBEAR-cjx/SignalHire" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="sybar_ai darylsim228 application,agent">
+              <td class="rank">91</td>
+              <td class="project"><strong>SYBAR_AI</strong><span>darylsim228</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">18</td>
+              <td class="num muted">18</td>
+              <td class="num gold">0</td>
+              <td class="num">0.25</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23</td>
+              <td class="num total">23.25</td>
+              <td class="links"><a href="https://sybar-ai-design.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Dabking228/SYBAR_AI" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="are you ok seraph application">
+              <td class="rank">92</td>
+              <td class="project"><strong>Are you OK</strong><span>Seraph</span></td>
+              <td>Application</td>
+              <td class="num strong">10</td>
+              <td class="num muted">10</td>
+              <td class="num gold">0</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.1</td>
+              <td class="num total">23.24</td>
+              <td class="links"><a href="https://apps.apple.com/cn/app/id6752334239" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/hiapnea/Are-you-OK" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="rebel bjj kathy application">
+              <td class="rank">93</td>
+              <td class="project"><strong>Rebel BJJ</strong><span>Kathy</span></td>
+              <td>Application</td>
+              <td class="num strong">36</td>
+              <td class="num muted">36</td>
+              <td class="num gold">0</td>
+              <td class="num">0.49</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.7</td>
+              <td class="num total">23.19</td>
+              <td class="links"><a href="https://phantom-thief-s-mat-main.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/kathyyxu/rebelbjj/" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="kickreason yetiansu deepresearch,skill">
+              <td class="rank">94</td>
+              <td class="project"><strong>KickReason</strong><span>yetiansu</span></td>
+              <td>DeepResearch,Skill</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.1</td>
+              <td class="num total">23.18</td>
+              <td class="links"><a href="https://cardinalwalls.github.io/kickreason/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/CardinalWalls/kickreason" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="event-networking-assistant ives skill,application">
+              <td class="rank">95</td>
+              <td class="project"><strong>event-networking-assistant</strong><span>ives</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23.1</td>
+              <td class="num total">23.15</td>
+              <td class="links"><a href="https://yan550983-create.github.io/hackson/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/yan550983-create/hackson" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="axon xinhongyu731 agent">
+              <td class="rank">96</td>
+              <td class="project"><strong>AXON</strong><span>xinhongyu731</span></td>
+              <td>Agent</td>
+              <td class="num strong">11</td>
+              <td class="num muted">10</td>
+              <td class="num gold">1</td>
+              <td class="num">0.15</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">23</td>
+              <td class="num total">23.15</td>
+              <td class="links"><a href="https://ai-computer.hkgai.net/sessions/new" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/arthurxin/axon-gai-agent" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="carekaki jkidumka application">
+              <td class="rank">97</td>
+              <td class="project"><strong>CareKaki</strong><span>jkidumka</span></td>
+              <td>Application</td>
+              <td class="num strong">24</td>
+              <td class="num muted">24</td>
+              <td class="num gold">0</td>
+              <td class="num">0.33</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.8</td>
+              <td class="num total">23.13</td>
+              <td class="links"><a href="https://carekaki-openai-realtime.vercel.app/demo" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/13shreyansh/CareKaki-OpenAI-Realtime" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="the unmuted katielin0207 application">
+              <td class="rank">98</td>
+              <td class="project"><strong>The Unmuted</strong><span>katielin0207</span></td>
+              <td>Application</td>
+              <td class="num strong">24</td>
+              <td class="num muted">24</td>
+              <td class="num gold">0</td>
+              <td class="num">0.33</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.8</td>
+              <td class="num total">23.13</td>
+              <td class="links"><a href="https://the-unmuted.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/The-unmuted/The-Unmuted-v2" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="saymore tracy agent,application">
+              <td class="rank">99</td>
+              <td class="project"><strong>Saymore</strong><span>Tracy</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.9</td>
+              <td class="num total">23.01</td>
+              <td class="links"><a href="https://saymore.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/saymore-app/saymore-hackathon" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="pulse emergency shreyanshagarwal134 application,agent">
+              <td class="rank">100</td>
+              <td class="project"><strong>Pulse Emergency</strong><span>shreyanshagarwal134</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">29</td>
+              <td class="num muted">29</td>
+              <td class="num gold">0</td>
+              <td class="num">0.4</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.6</td>
+              <td class="num total">23</td>
+              <td class="links"><a href="https://savepulse.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/13shreyansh/pulseguard" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="isolid monicalou0523 agent,application">
+              <td class="rank">101</td>
+              <td class="project"><strong>Isolid</strong><span>monicalou0523</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">71</td>
+              <td class="num muted">69</td>
+              <td class="num gold">2</td>
+              <td class="num">0.97</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22</td>
+              <td class="num total">22.97</td>
+              <td class="links"><a href="https://isolid.p1pi.me" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/pi523/ISolid" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="aidbridge xiaoyuai application">
+              <td class="rank">102</td>
+              <td class="project"><strong>AidBridge</strong><span>xiaoyuai</span></td>
+              <td>Application</td>
+              <td class="num strong">33</td>
+              <td class="num muted">33</td>
+              <td class="num gold">0</td>
+              <td class="num">0.45</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.5</td>
+              <td class="num total">22.95</td>
+              <td class="links"><a href="https://wangsiyi7.github.io/aidbridge-ucws-2026/?demo=1" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/wangsiyi7/aidbridge-ucws-2026" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="fetch a coke wenjie application">
+              <td class="rank">103</td>
+              <td class="project"><strong>Fetch a Coke</strong><span>Wenjie</span></td>
+              <td>Application</td>
+              <td class="num strong">19</td>
+              <td class="num muted">19</td>
+              <td class="num gold">0</td>
+              <td class="num">0.26</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.6</td>
+              <td class="num total">22.86</td>
+              <td class="links"><a href="https://youtu.be/7-kzERfLwH0" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Wenjix/fetch-a-coke" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="oh-my-project xenius963 application">
+              <td class="rank">104</td>
+              <td class="project"><strong>Oh-my-project</strong><span>xenius963</span></td>
+              <td>Application</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.8</td>
+              <td class="num total">22.85</td>
+              <td class="links"><a href="https://image.58sb.cn/file/img/cxgVevNs.png" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/crimsonKernel/oh-my-project" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="veriforge duan agent,skill">
+              <td class="rank">105</td>
+              <td class="project"><strong>VeriForge</strong><span>duan</span></td>
+              <td>Agent,Skill</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.7</td>
+              <td class="num total">22.77</td>
+              <td class="links"><a href="https://www.youtube.com/watch?v=Wy0rlpKqXNc" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/zhenyueD/veriforge" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="family notes wtbdgjzd666 skill,application">
+              <td class="rank">106</td>
+              <td class="project"><strong>Family Notes</strong><span>WTBDGJZD666</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">34</td>
+              <td class="num muted">34</td>
+              <td class="num gold">0</td>
+              <td class="num">0.46</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.3</td>
+              <td class="num total">22.76</td>
+              <td class="links"><a href="https://household-chores-sticky-note.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/shengyueni/Household-chores-sticky-note" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="truthapply - we don&#x27;t teach you how to lie wozhan agent,application">
+              <td class="rank">107</td>
+              <td class="project"><strong>TruthApply - We don&#x27;t teach you how to lie</strong><span>wozhan</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.6</td>
+              <td class="num total">22.71</td>
+              <td class="links"><a href="https://truthapply-agent.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/wozhann/truthapply-agent" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="career pulse vaibhavtripathi2020 application">
+              <td class="rank">108</td>
+              <td class="project"><strong>Career Pulse</strong><span>vaibhavtripathi2020</span></td>
+              <td>Application</td>
+              <td class="num strong">20</td>
+              <td class="num muted">20</td>
+              <td class="num gold">0</td>
+              <td class="num">0.27</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.4</td>
+              <td class="num total">22.67</td>
+              <td class="links"><a href="https://career-pulse-alpha.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Vaibhavtripathi7/career_pulse" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="kaizen crew gold agent">
+              <td class="rank">109</td>
+              <td class="project"><strong>Kaizen Crew</strong><span>Gold</span></td>
+              <td>Agent</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.6</td>
+              <td class="num total">22.67</td>
+              <td class="links"><a href="https://raw.githack.com/kengyit/agent_for_ai_implementation/main/web/demo.html" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/kengyit/agent_for_ai_implementation" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="sentinel jky agent,application">
+              <td class="rank">110</td>
+              <td class="project"><strong>Sentinel</strong><span>Jky</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.6</td>
+              <td class="num total">22.67</td>
+              <td class="links"><a href="https://sentinel-syd.livelystone-cee98c01.australiaeast.azurecontainerapps.io/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ORANGECRAB13/Sentinel_Syd" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="orchor songnestle skill,agent">
+              <td class="rank">111</td>
+              <td class="project"><strong>Orchor</strong><span>songnestle</span></td>
+              <td>Skill,Agent</td>
+              <td class="num strong">11</td>
+              <td class="num muted">9</td>
+              <td class="num gold">2</td>
+              <td class="num">0.15</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.5</td>
+              <td class="num total">22.65</td>
+              <td class="links"><a href="https://orchor.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/songnestle/Orchor/" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="remembry kongjiyu application">
+              <td class="rank">112</td>
+              <td class="project"><strong>Remembry</strong><span>kongjiyu</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.5</td>
+              <td class="num total">22.6</td>
+              <td class="links"><a href="https://out-umber-psi.vercel.app/download" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/kongjiyu/remembry-app" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="voxagent secondbrain agent">
+              <td class="rank">113</td>
+              <td class="project"><strong>VoxAgent</strong><span>secondbrain</span></td>
+              <td>Agent</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.5</td>
+              <td class="num total">22.57</td>
+              <td class="links"><a href="https://voxagent-ucws2026.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/2319582090-spec/voxagent-ucws2026" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="untether santhosh agent,application">
+              <td class="rank">114</td>
+              <td class="project"><strong>Untether</strong><span>Santhosh</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.5</td>
+              <td class="num total">22.57</td>
+              <td class="links"><a href="https://untether-chi.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/santhosh2475/untether" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="clarityx｜real-time ai decision making system for meetings vine application">
+              <td class="rank">115</td>
+              <td class="project"><strong>ClarityX｜Real-Time AI Decision Making System for Meetings</strong><span>Vine</span></td>
+              <td>Application</td>
+              <td class="num strong">83</td>
+              <td class="num muted">83</td>
+              <td class="num gold">0</td>
+              <td class="num">1.13</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.4</td>
+              <td class="num total">22.53</td>
+              <td class="links"><a href="https://clare.vinex.top/website/en.html" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/VineINDalvik/work-doubao" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="missalpha huijoohwee deepresearch">
+              <td class="rank">116</td>
+              <td class="project"><strong>missalpha</strong><span>huijoohwee</span></td>
+              <td>DeepResearch</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.4</td>
+              <td class="num total">22.51</td>
+              <td class="links"><a href="https://airvio.co/knowgrph/share/eyJjYW5vbmljYWxQYXRoIjoiaHVpam9vaHdlZS9kb2NzL2tub3dncnBoLW1pc3NhbHBoLWRlbW8ubWQiLCJ3b3Jrc3BhY2VJZCI6bnVsbH0" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/huijoohwee/knowgrph" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="agentcircle pthebesfsu agent,application">
+              <td class="rank">117</td>
+              <td class="project"><strong>AgentCircle</strong><span>pthebesfsu</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.4</td>
+              <td class="num total">22.5</td>
+              <td class="links"><a href="https://youtu.be/7Lg_Hucw4eE?si=x1LJ-RLx6veyaAYd" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/pramod-hijenny/agent.git" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="indielaunch — multi-agent social content co-pilot for indie hackers lizz agent,skill">
+              <td class="rank">118</td>
+              <td class="project"><strong>IndieLaunch — Multi-Agent Social Content Co-Pilot for Indie Hackers</strong><span>Lizz</span></td>
+              <td>Agent,Skill</td>
+              <td class="num strong">12</td>
+              <td class="num muted">12</td>
+              <td class="num gold">0</td>
+              <td class="num">0.16</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.3</td>
+              <td class="num total">22.46</td>
+              <td class="links"><a href="https://indie-launch-agent.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/lizz011/indielaunch-multiplatform-agent" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="jinrator jinbei application">
+              <td class="rank">119</td>
+              <td class="project"><strong>Jinrator</strong><span>jinbei</span></td>
+              <td>Application</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.4</td>
+              <td class="num total">22.45</td>
+              <td class="links"><a href="https://www.jinrator-lingpuqiyu.com" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Jinrator/LingPuQiYu" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="amplifyai masterasnackin application,agent">
+              <td class="rank">120</td>
+              <td class="project"><strong>AmplifyAI</strong><span>MasteraSnackin</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.4</td>
+              <td class="num total">22.45</td>
+              <td class="links"><a href="https://aistudio.google.com/apps/6a703c1e-c3a1-4060-aa6b-91df10f7a3ad?showAssistant=true&amp;project=neat-resolver-235412&amp;showPreview=true&amp;fullscreenApplet=true" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/MasteraSnackin/AmplifyAI" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="spanweave — ambient cross-tool memory for ai coding agents yeefei agent">
+              <td class="rank">121</td>
+              <td class="project"><strong>Spanweave — Ambient Cross-Tool Memory for AI Coding Agents</strong><span>yeefei</span></td>
+              <td>Agent</td>
+              <td class="num strong">13</td>
+              <td class="num muted">13</td>
+              <td class="num gold">0</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.2</td>
+              <td class="num total">22.38</td>
+              <td class="links"><a href="https://youtu.be/9NPAzSUWHGM" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ooiyeefei/agentic-coding-workflow-os" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ucws project searcher xiyiwang skill">
+              <td class="rank">122</td>
+              <td class="project"><strong>UCWS Project Searcher</strong><span>xiyiwang</span></td>
+              <td>Skill</td>
+              <td class="num strong">32</td>
+              <td class="num muted">32</td>
+              <td class="num gold">0</td>
+              <td class="num">0.44</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.9</td>
+              <td class="num total">22.34</td>
+              <td class="links"><a href="https://wangsiyi7.github.io/ucws-project-aggregator/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/wangsiyi7/ucws-project-aggregator" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="branchly yuxuanzhou2003 application">
+              <td class="rank">123</td>
+              <td class="project"><strong>Branchly</strong><span>yuxuanzhou2003</span></td>
+              <td>Application</td>
+              <td class="num strong">37</td>
+              <td class="num muted">36</td>
+              <td class="num gold">1</td>
+              <td class="num">0.51</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.8</td>
+              <td class="num total">22.31</td>
+              <td class="links"><a href="https://traeduanjunnrl.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/yuxuanzhou2003-eng/branchly/" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="grantelly markusfoo application">
+              <td class="rank">124</td>
+              <td class="project"><strong>GranTelly</strong><span>MarkusFoo</span></td>
+              <td>Application</td>
+              <td class="num strong">22</td>
+              <td class="num muted">21</td>
+              <td class="num gold">1</td>
+              <td class="num">0.3</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22</td>
+              <td class="num total">22.3</td>
+              <td class="links"><a href="https://docs.google.com/presentation/d/1SaVJKHrxifSA1SMacpboMh6Tqj4tqyJ0/edit?usp=sharing&amp;ouid=103858049410295078790&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/mksf11e/GranTelly" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="kakeibo ai nigeltanjc agent,application">
+              <td class="rank">125</td>
+              <td class="project"><strong>Kakeibo AI</strong><span>nigeltanjc</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.2</td>
+              <td class="num total">22.3</td>
+              <td class="links"><a href="https://kakeibofinance.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/jinchuntan/kakeibofinance" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="zer0daylight superflyasia application">
+              <td class="rank">126</td>
+              <td class="project"><strong>zer0daylight</strong><span>superflyasia</span></td>
+              <td>Application</td>
+              <td class="num strong">12</td>
+              <td class="num muted">12</td>
+              <td class="num gold">0</td>
+              <td class="num">0.16</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.1</td>
+              <td class="num total">22.26</td>
+              <td class="links"><a href="https://www.zer0daylight.com" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/drock8/zer0daylight" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ai travel notebook brivia application">
+              <td class="rank">127</td>
+              <td class="project"><strong>AI Travel Notebook</strong><span>Brivia</span></td>
+              <td>Application</td>
+              <td class="num strong">9</td>
+              <td class="num muted">9</td>
+              <td class="num gold">0</td>
+              <td class="num">0.12</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.1</td>
+              <td class="num total">22.22</td>
+              <td class="links"><a href="https://youtu.be/d4KY4Qsf_lg?si=6BChdk5AjHRPMr-h" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/fenglinghao650-arch/ai-travel-log" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="unsribble 2000annujolly application,agent">
+              <td class="rank">128</td>
+              <td class="project"><strong>UnSribble</strong><span>2000annujolly</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">15</td>
+              <td class="num muted">15</td>
+              <td class="num gold">0</td>
+              <td class="num">0.2</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22</td>
+              <td class="num total">22.2</td>
+              <td class="links"><a href="https://unsribbles.onrender.com/landing.html" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/annu12340/UnScribble" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="agentproof veithly agent,skill">
+              <td class="rank">129</td>
+              <td class="project"><strong>AgentProof</strong><span>veithly</span></td>
+              <td>Agent,Skill</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22.1</td>
+              <td class="num total">22.17</td>
+              <td class="links"><a href="https://agentproof-amber.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/veithly/agentproof" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="one skills one saas wuxinning skill,application">
+              <td class="rank">130</td>
+              <td class="project"><strong>One Skills One Saas</strong><span>WuXinning</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">56</td>
+              <td class="num muted">56</td>
+              <td class="num gold">0</td>
+              <td class="num">0.77</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.4</td>
+              <td class="num total">22.17</td>
+              <td class="links"><a href="https://gantec.cn/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/floaty996/OPENTACTICS" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="local cocoa fty20020322 application">
+              <td class="rank">131</td>
+              <td class="project"><strong>Local Cocoa</strong><span>fty20020322</span></td>
+              <td>Application</td>
+              <td class="num strong">9</td>
+              <td class="num muted">9</td>
+              <td class="num gold">0</td>
+              <td class="num">0.12</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22</td>
+              <td class="num total">22.12</td>
+              <td class="links"><a href="https://1drv.ms/v/c/f2bdd842cb182adc/IQBtIAapeIp4Q7VieSQwgtZXASEMEofaN0dHybZSoFL361k?e=pZ0DuY" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/EricFan2002/LocalPIMSystem" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="valhalla bar2022ani agent,skill">
+              <td class="rank">132</td>
+              <td class="project"><strong>Valhalla</strong><span>bar2022ani</span></td>
+              <td>Agent,Skill</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">22</td>
+              <td class="num total">22.05</td>
+              <td class="links"><a href="https://docs.google.com/videos/d/1PrebyuHgknCgoky-ugdLqe9KceUzf87Qzb4eCjLsFYI/play" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/BaraniVA/Valhalla" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="next gen gui: intent capture pointer alphazen agent">
+              <td class="rank">133</td>
+              <td class="project"><strong>Next Gen GUI: Intent Capture Pointer</strong><span>AlphaZen</span></td>
+              <td>Agent</td>
+              <td class="num strong">24</td>
+              <td class="num muted">23</td>
+              <td class="num gold">1</td>
+              <td class="num">0.33</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.7</td>
+              <td class="num total">22.03</td>
+              <td class="links"><a href="https://alphazen33.github.io/intent-pointer/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/alphazen33/intent-pointer" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="cloth_portal helenhuang002 agent,application">
+              <td class="rank">134</td>
+              <td class="project"><strong>Cloth_Portal</strong><span>helenhuang002</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.9</td>
+              <td class="num total">21.97</td>
+              <td class="links"><a href="https://drive.google.com/file/d/11R_aCr2Sem_XnFuWEjGgNW9dyaKnd_Mg/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/TripleHHH-ui/Cloth_Portal" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="trustline ai anniefsh agent">
+              <td class="rank">135</td>
+              <td class="project"><strong>TrustLine AI</strong><span>Anniefsh</span></td>
+              <td>Agent</td>
+              <td class="num strong">34</td>
+              <td class="num muted">34</td>
+              <td class="num gold">0</td>
+              <td class="num">0.46</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.5</td>
+              <td class="num total">21.96</td>
+              <td class="links"><a href="https://trustline-ai-agent.netlify.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/wangsiyi7/trustline-ai-agent" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="expression precision ysc20020730 agent,skill">
+              <td class="rank">136</td>
+              <td class="project"><strong>Expression Precision</strong><span>ysc20020730</span></td>
+              <td>Agent,Skill</td>
+              <td class="num strong">3</td>
+              <td class="num muted">3</td>
+              <td class="num gold">0</td>
+              <td class="num">0.04</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.9</td>
+              <td class="num total">21.94</td>
+              <td class="links"><a href="https://expression-precision-studio.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/75yang/expression-precision" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="agenthire michael application">
+              <td class="rank">137</td>
+              <td class="project"><strong>AgentHire</strong><span>michael</span></td>
+              <td>Application</td>
+              <td class="num strong">13</td>
+              <td class="num muted">12</td>
+              <td class="num gold">1</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.7</td>
+              <td class="num total">21.88</td>
+              <td class="links"><a href="https://ba35f347a12341cdbedf2b0667c7a830.prod.enterapp.pro" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Michael-4753/enter-AIJobSeeker" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="aiventure conor application">
+              <td class="rank">138</td>
+              <td class="project"><strong>AIventure</strong><span>conor</span></td>
+              <td>Application</td>
+              <td class="num strong">20</td>
+              <td class="num muted">20</td>
+              <td class="num gold">0</td>
+              <td class="num">0.27</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.6</td>
+              <td class="num total">21.87</td>
+              <td class="links"><a href="https://aiventure-swart.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/newroot-git/aiventure" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="htmldrop — where shared ideas become shared decisions, converged by ai yooi application,skill">
+              <td class="rank">139</td>
+              <td class="project"><strong>htmldrop — where shared ideas become shared decisions, converged by AI</strong><span>yooi</span></td>
+              <td>Application,Skill</td>
+              <td class="num strong">18</td>
+              <td class="num muted">17</td>
+              <td class="num gold">1</td>
+              <td class="num">0.25</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.6</td>
+              <td class="num total">21.85</td>
+              <td class="links"><a href="https://youtu.be/MFRjgwCVOKU" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ooiyeefei/htmldrop" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="zafu_xiaolin charn18658569539 agent">
+              <td class="rank">140</td>
+              <td class="project"><strong>zafu_xiaolin</strong><span>charn18658569539</span></td>
+              <td>Agent</td>
+              <td class="num strong">39</td>
+              <td class="num muted">10</td>
+              <td class="num gold">29</td>
+              <td class="num">0.53</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.3</td>
+              <td class="num total">21.83</td>
+              <td class="links"><a href="https://github.com/20czy/zafu_xiaolin" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/20czy/zafu_xiaolin" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="marsham edge: argo · ken · deb : multi-agent anomaly detection &amp; intelligence demarcusmuriel600 agent">
+              <td class="rank">141</td>
+              <td class="project"><strong>Marsham Edge: Argo · Ken · Deb : Multi-Agent Anomaly Detection &amp; Intelligence</strong><span>demarcusmuriel600</span></td>
+              <td>Agent</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.7</td>
+              <td class="num total">21.81</td>
+              <td class="links"><a href="https://liguard.streamlit.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/MJDemarcus/marsham-edge" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="bakerysense wmhytech application,skill">
+              <td class="rank">142</td>
+              <td class="project"><strong>BakerySense</strong><span>wmhytech</span></td>
+              <td>Application,Skill</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.7</td>
+              <td class="num total">21.8</td>
+              <td class="links"><a href="https://bakerysense.swmengappdev.workers.dev" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Whyme-Labs/bakerysense" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ai era life methodology skill library wanglin skill">
+              <td class="rank">143</td>
+              <td class="project"><strong>AI Era Life Methodology Skill Library</strong><span>wanglin</span></td>
+              <td>Skill</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.6</td>
+              <td class="num total">21.7</td>
+              <td class="links"><a href="https://t.bilibili.com/1203949053315907591?share_source=pc_native" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/wanglin1111111/ai-methodology-skills.git" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="hackathon project delivery nor skill">
+              <td class="rank">144</td>
+              <td class="project"><strong>Hackathon Project Delivery</strong><span>nor</span></td>
+              <td>Skill</td>
+              <td class="num strong">136</td>
+              <td class="num muted">134</td>
+              <td class="num gold">2</td>
+              <td class="num">1.86</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.7</td>
+              <td class="num total">21.56</td>
+              <td class="links"><a href="https://wangsiyi7.github.io/hackathon-project-delivery/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/wangsiyi7/hackathon-project-delivery" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="bersihyper: ai smart waste to resource platform amani skill,application">
+              <td class="rank">145</td>
+              <td class="project"><strong>Bersihyper: AI Smart Waste to Resource Platform</strong><span>Amani</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">24</td>
+              <td class="num muted">24</td>
+              <td class="num gold">0</td>
+              <td class="num">0.33</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.2</td>
+              <td class="num total">21.53</td>
+              <td class="links"><a href="https://bersihyper.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/elyas911/bersihyper" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="memorymaze zhihao application">
+              <td class="rank">146</td>
+              <td class="project"><strong>MemoryMaze</strong><span>zhihao</span></td>
+              <td>Application</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.4</td>
+              <td class="num total">21.51</td>
+              <td class="links"><a href="https://traeconfessionmljh.vercel.app/game.html?id=maze_mpthgela_070x016f012121" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ZhiHaoSun/confession-1" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="moodtune arden application">
+              <td class="rank">147</td>
+              <td class="project"><strong>MoodTune</strong><span>Arden</span></td>
+              <td>Application</td>
+              <td class="num strong">8</td>
+              <td class="num muted">7</td>
+              <td class="num gold">1</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.4</td>
+              <td class="num total">21.51</td>
+              <td class="links"><a href="https://mood-tune-ten.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/ArdenGao10/MoodTune" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="langai shasha application">
+              <td class="rank">148</td>
+              <td class="project"><strong>LangAI</strong><span>Shasha</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.3</td>
+              <td class="num total">21.4</td>
+              <td class="links"><a href="https://langai.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/souhaylachaibi18-star/LangAI" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="oopsclaw cigatheratman application">
+              <td class="rank">149</td>
+              <td class="project"><strong>OopsClaw</strong><span>CigaTheRatman</span></td>
+              <td>Application</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.3</td>
+              <td class="num total">21.35</td>
+              <td class="links"><a href="https://www.oopsclaw.ai/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/EtFourier/OopsClaw/tree/main" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="bersihyper: ai smart waste to resource platform amani skill,application">
+              <td class="rank">150</td>
+              <td class="project"><strong>Bersihyper: AI Smart Waste to Resource Platform</strong><span>Amani</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.2</td>
+              <td class="num total">21.3</td>
+              <td class="links"><a href="https://bersihyper.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/elyas911/bersihyper" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="genpark chrisp agent">
+              <td class="rank">151</td>
+              <td class="project"><strong>GenPark</strong><span>CHRISP</span></td>
+              <td>Agent</td>
+              <td class="num strong">13</td>
+              <td class="num muted">10</td>
+              <td class="num gold">3</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.1</td>
+              <td class="num total">21.28</td>
+              <td class="links"><a href="https://ucws-hackathon-agent.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Alpha-Park/ucws-hackathon-agent" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="resq ferrois application">
+              <td class="rank">152</td>
+              <td class="project"><strong>ResQ</strong><span>ferrois</span></td>
+              <td>Application</td>
+              <td class="num strong">11</td>
+              <td class="num muted">10</td>
+              <td class="num gold">1</td>
+              <td class="num">0.15</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.1</td>
+              <td class="num total">21.25</td>
+              <td class="links"><a href="https://drive.google.com/drive/folders/1TE3_ka57iVKf9Gt6LxozSlzfSGXrz6Ca" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Ferrois/resq" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="sea launch copilot tammyngw22 agent">
+              <td class="rank">153</td>
+              <td class="project"><strong>SEA Launch Copilot</strong><span>tammyngw22</span></td>
+              <td>Agent</td>
+              <td class="num strong">10</td>
+              <td class="num muted">10</td>
+              <td class="num gold">0</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.1</td>
+              <td class="num total">21.24</td>
+              <td class="links"><a href="https://youtu.be/DKlTzkBmaUY?si=s9-giZTBXeWNcPH3" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/tammyngw22-oss/sea-launch-copilot.git" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="wimi ai mikriukovevgenii application">
+              <td class="rank">154</td>
+              <td class="project"><strong>WiMi AI</strong><span>MikriukovEvgenii</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.1</td>
+              <td class="num total">21.2</td>
+              <td class="links"><a href="https://wimiworld.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/cheysauce/wimi-ai" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="mafia visualizer zhaomh agent,application">
+              <td class="rank">155</td>
+              <td class="project"><strong>Mafia Visualizer</strong><span>zhaomh</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">12</td>
+              <td class="num muted">12</td>
+              <td class="num gold">0</td>
+              <td class="num">0.16</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21</td>
+              <td class="num total">21.16</td>
+              <td class="links"><a href="https://mafia-visualizer-2.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/MenghaoZhao/mafia-visualizer" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="wei defense yangyixiang application">
+              <td class="rank">156</td>
+              <td class="project"><strong>WEI Defense</strong><span>YangYixiang</span></td>
+              <td>Application</td>
+              <td class="num strong">3</td>
+              <td class="num muted">3</td>
+              <td class="num gold">0</td>
+              <td class="num">0.04</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">21.1</td>
+              <td class="num total">21.14</td>
+              <td class="links"><a href="https://wei-defense-sentinelx.vercel.app/?lang=en#top" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/null-goudan/ue5-drone-sim" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="tone-barrier skill chenxiwen skill,application">
+              <td class="rank">157</td>
+              <td class="project"><strong>Tone-barrier skill</strong><span>ChenXiwen</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">17</td>
+              <td class="num muted">17</td>
+              <td class="num gold">0</td>
+              <td class="num">0.23</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">20.8</td>
+              <td class="num total">21.03</td>
+              <td class="links"><a href="https://huggingface.co/spaces/pzr114514/skills-demo" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Mangkhut160/dirty-words-clean" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="axiom nyota agent,application">
+              <td class="rank">158</td>
+              <td class="project"><strong>Axiom</strong><span>nyota</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">9</td>
+              <td class="num muted">9</td>
+              <td class="num gold">0</td>
+              <td class="num">0.12</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">20.8</td>
+              <td class="num total">20.92</td>
+              <td class="links"><a href="https://axiom.nyota.cn" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Nyota-tree" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="praetor quer1968 agent,application">
+              <td class="rank">159</td>
+              <td class="project"><strong>Praetor</strong><span>quer1968</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">10</td>
+              <td class="num muted">10</td>
+              <td class="num gold">0</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">20.7</td>
+              <td class="num total">20.84</td>
+              <td class="links"><a href="https://gent-alpha-terminal.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/songnestle/agent-alpha-terminal" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="barlog hellkitty application">
+              <td class="rank">160</td>
+              <td class="project"><strong>BarLog</strong><span>HellKitty</span></td>
+              <td>Application</td>
+              <td class="num strong">33</td>
+              <td class="num muted">29</td>
+              <td class="num gold">4</td>
+              <td class="num">0.45</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">20.2</td>
+              <td class="num total">20.65</td>
+              <td class="links"><a href="https://entryalcohol.9170oioi.workers.dev/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/HellKitty29/BarLog" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="wand jazz bar hanya application">
+              <td class="rank">161</td>
+              <td class="project"><strong>Wand Jazz Bar</strong><span>hanya</span></td>
+              <td>Application</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">20.4</td>
+              <td class="num total">20.51</td>
+              <td class="links"><a href="https://wandjazzbar.vercel.app/jazz-bar" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/infiniteHY/WandJazzBar" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="supervote nashiville application">
+              <td class="rank">162</td>
+              <td class="project"><strong>Supervote</strong><span>Nashiville</span></td>
+              <td>Application</td>
+              <td class="num strong">44</td>
+              <td class="num muted">44</td>
+              <td class="num gold">0</td>
+              <td class="num">0.6</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.9</td>
+              <td class="num total">20.5</td>
+              <td class="links"><a href="https://supervote.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/l937370390/supervote" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="runwiser aricredemption agent,deepresearch">
+              <td class="rank">163</td>
+              <td class="project"><strong>Runwiser</strong><span>aricredemption</span></td>
+              <td>Agent,DeepResearch</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">20.4</td>
+              <td class="num total">20.45</td>
+              <td class="links"><a href="https://runwiser.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/AricRedemption/awesome-skill-workflows" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="polatide joyce application,agent">
+              <td class="rank">164</td>
+              <td class="project"><strong>Polatide</strong><span>joyce</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">40</td>
+              <td class="num muted">40</td>
+              <td class="num gold">0</td>
+              <td class="num">0.55</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.8</td>
+              <td class="num total">20.35</td>
+              <td class="links"><a href="https://appetize.io/app/b_bakgzlhnuj6p6pj2vwqk3cgf5m" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/niny9/tidal-notes-ios" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="pibo emoo application">
+              <td class="rank">165</td>
+              <td class="project"><strong>PIbo</strong><span>emoo</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.8</td>
+              <td class="num total">19.9</td>
+              <td class="links"><a href="https://github.com/emoow/pibo_info.git" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/tong2prosperity/LifePet.git" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="typeai murt123 application">
+              <td class="rank">166</td>
+              <td class="project"><strong>typeAI</strong><span>murt123</span></td>
+              <td>Application</td>
+              <td class="num strong">9</td>
+              <td class="num muted">9</td>
+              <td class="num gold">0</td>
+              <td class="num">0.12</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.6</td>
+              <td class="num total">19.72</td>
+              <td class="links"><a href="https://typeaiapp.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Murtaza7863/typeAI" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="personal knowledge base cambia skill">
+              <td class="rank">167</td>
+              <td class="project"><strong>Personal Knowledge Base</strong><span>Cambia</span></td>
+              <td>Skill</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.6</td>
+              <td class="num total">19.71</td>
+              <td class="links"><a href="https://github.com/Cambia-Yu/personal-knowledge-base-skill" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Cambia-Yu/personal-knowledge-base-skill" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="lumie midasovor agent,application">
+              <td class="rank">168</td>
+              <td class="project"><strong>Lumie</strong><span>midasovor</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.5</td>
+              <td class="num total">19.61</td>
+              <td class="links"><a href="https://lumie.love" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/YukiOvOb/Lumie-platform" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="cs-everysystem design studio duocodetechu agent,application">
+              <td class="rank">169</td>
+              <td class="project"><strong>CS-EverySystem Design Studio</strong><span>duocodetechu</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">51</td>
+              <td class="num muted">51</td>
+              <td class="num gold">0</td>
+              <td class="num">0.7</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.9</td>
+              <td class="num total">19.6</td>
+              <td class="links"><a href="https://duocodetech.com/customer-agent/design-studio/dashboard" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/DuoCode2/CS-EverySystem" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="auren institutional intelligence singleton deepresearch,application">
+              <td class="rank">170</td>
+              <td class="project"><strong>Auren Institutional Intelligence</strong><span>Singleton</span></td>
+              <td>DeepResearch,Application</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.5</td>
+              <td class="num total">19.58</td>
+              <td class="links"><a href="https://hebbia-inspired-finance-ai-ed18b2e6.sites.vm0.io/#top" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/SingletonYe/Auren-Institutional-Intelligence.git" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="durian ai moonlight skill,application">
+              <td class="rank">171</td>
+              <td class="project"><strong>Durian AI</strong><span>Moonlight</span></td>
+              <td>Skill,Application</td>
+              <td class="num strong">11</td>
+              <td class="num muted">11</td>
+              <td class="num gold">0</td>
+              <td class="num">0.15</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.4</td>
+              <td class="num total">19.55</td>
+              <td class="links"><a href="https://drive.google.com/file/d/18an3NKs_LUnJY1vVy7XTIxputzhLPoW1/view" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/alilichan/durian" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="burneat nicoleshen1920 application">
+              <td class="rank">172</td>
+              <td class="project"><strong>BurnEat</strong><span>nicoleshen1920</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.3</td>
+              <td class="num total">19.4</td>
+              <td class="links"><a href="https://youtu.be/MEdWX2HXzTA" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/nicoleshen1920-bit/BurnEat" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="intelliral elstuhn application,deepresearch">
+              <td class="rank">173</td>
+              <td class="project"><strong>Intelliral</strong><span>Elstuhn</span></td>
+              <td>Application,DeepResearch</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.2</td>
+              <td class="num total">19.3</td>
+              <td class="links"><a href="https://video-intelligence-dashboard-two.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/chiatzeheng/video-intelligence-dashboard" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="alphaplus jack agent,application">
+              <td class="rank">174</td>
+              <td class="project"><strong>AlphaPlus</strong><span>jack</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.2</td>
+              <td class="num total">19.3</td>
+              <td class="links"><a href="https://alphaplus.datapro.asia/?invite=inv_JUCKkrnepPWVSjGQ3YmvQVQ6s0WHX4xP7qe7SngyS1w" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/lqjack/alphaplus" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="read a little, write a little vesper application">
+              <td class="rank">175</td>
+              <td class="project"><strong>Read a Little, Write a Little</strong><span>Vesper</span></td>
+              <td>Application</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.2</td>
+              <td class="num total">19.28</td>
+              <td class="links"><a href="https://irene-bloom.github.io/reading-journal/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Irene-bloom/reading-journal.git" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="runwiser-wiki c635939636 application,skill">
+              <td class="rank">176</td>
+              <td class="project"><strong>runwiser-wiki</strong><span>c635939636</span></td>
+              <td>Application,Skill</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.2</td>
+              <td class="num total">19.27</td>
+              <td class="links"><a href="https://runwiser-wiki.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/AricRedemption/awesome-skill-workflows" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="cura cura agent,application">
+              <td class="rank">177</td>
+              <td class="project"><strong>Cura</strong><span>Cura</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">10</td>
+              <td class="num muted">10</td>
+              <td class="num gold">0</td>
+              <td class="num">0.14</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">19.1</td>
+              <td class="num total">19.24</td>
+              <td class="links"><a href="https://cura-orcin.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/alstudiohaus/Cura" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="quantable noah agent,application">
+              <td class="rank">178</td>
+              <td class="project"><strong>Quantable</strong><span>Noah</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">31</td>
+              <td class="num muted">31</td>
+              <td class="num gold">0</td>
+              <td class="num">0.42</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.6</td>
+              <td class="num total">19.02</td>
+              <td class="links"><a href="https://biz-insight-ai-28.lovable.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/cobay-tech/Quantable" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="compliance twin: neuro-symbolic multi-agent system for sme filing gufei6684 agent,application">
+              <td class="rank">179</td>
+              <td class="project"><strong>Compliance Twin: Neuro-Symbolic Multi-Agent System for SME Filing</strong><span>gufei6684</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.9</td>
+              <td class="num total">19</td>
+              <td class="links"><a href="https://donthaveademo.com" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://donthave.github.com" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="wizpaz tj application">
+              <td class="rank">180</td>
+              <td class="project"><strong>WizPaz</strong><span>TJ</span></td>
+              <td>Application</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.9</td>
+              <td class="num total">18.98</td>
+              <td class="links"><a href="https://wizpaz.com" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/tenured-master-chef-607/WizPaz" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="buzhai repink application,agent">
+              <td class="rank">181</td>
+              <td class="project"><strong>BuZhai</strong><span>repink</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">38</td>
+              <td class="num muted">38</td>
+              <td class="num gold">0</td>
+              <td class="num">0.52</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.4</td>
+              <td class="num total">18.92</td>
+              <td class="links"><a href="https://machinecat-mobile-app.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/venice13day5-lab/machinecat" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="rallyclub yan application">
+              <td class="rank">182</td>
+              <td class="project"><strong>RallyClub</strong><span>Yan</span></td>
+              <td>Application</td>
+              <td class="num strong">3</td>
+              <td class="num muted">3</td>
+              <td class="num gold">0</td>
+              <td class="num">0.04</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.8</td>
+              <td class="num total">18.84</td>
+              <td class="links"><a href="https://tennis-game-on.lovable.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/echo25257758-cpu/tennis-game-on" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="ready - radar for who moves your world alva agent">
+              <td class="rank">183</td>
+              <td class="project"><strong>Ready - Radar for Who Moves Your World</strong><span>alva</span></td>
+              <td>Agent</td>
+              <td class="num strong">3</td>
+              <td class="num muted">3</td>
+              <td class="num gold">0</td>
+              <td class="num">0.04</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.7</td>
+              <td class="num total">18.74</td>
+              <td class="links"><a href="https://ready.ai" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/readydotai" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="metaneed shijunleicn application,agent">
+              <td class="rank">184</td>
+              <td class="project"><strong>MetaNeed</strong><span>shijunleicn</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.6</td>
+              <td class="num total">18.7</td>
+              <td class="links"><a href="https://metaneed.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/shijun-lei/metaneed" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="worldwise jilucky1983 application">
+              <td class="rank">185</td>
+              <td class="project"><strong>WorldWise</strong><span>jilucky1983</span></td>
+              <td>Application</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.6</td>
+              <td class="num total">18.67</td>
+              <td class="links"><a href="https://worldwise-ruby.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/angelpt666/worldwise" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="vouch flyingbarlett agent,application">
+              <td class="rank">186</td>
+              <td class="project"><strong>Vouch</strong><span>FlyingBarlett</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">3</td>
+              <td class="num muted">3</td>
+              <td class="num gold">0</td>
+              <td class="num">0.04</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.6</td>
+              <td class="num total">18.64</td>
+              <td class="links"><a href="https://github.com/Bongo-AI/vouch/demo.mp4" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Bongo-AI/vouch" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="variant-design-skill yuqingchen02 skill">
+              <td class="rank">187</td>
+              <td class="project"><strong>Variant-design-skill</strong><span>yuqingchen02</span></td>
+              <td>Skill</td>
+              <td class="num strong">54</td>
+              <td class="num muted">11</td>
+              <td class="num gold">43</td>
+              <td class="num">0.74</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">17.9</td>
+              <td class="num total">18.64</td>
+              <td class="links"><a href="https://github.com/YuqingNicole/variant-design-skill" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/YuqingNicole/variant-design-skill" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="solariq jk agent">
+              <td class="rank">188</td>
+              <td class="project"><strong>SolarIQ</strong><span>JK</span></td>
+              <td>Agent</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">18.5</td>
+              <td class="num total">18.61</td>
+              <td class="links"><a href="https://opentoken.utf.link" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/JK8769" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="boboongy heal urban agent bobo agent,application">
+              <td class="rank">189</td>
+              <td class="project"><strong>boboongy heal urban agent</strong><span>bobo</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">17.7</td>
+              <td class="num total">17.8</td>
+              <td class="links"><a href="https://boboongy.github.io/urban-heal-agent/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/boboongy/urban-heal-agent" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="neuradesk mcn incubation agent (mcn playbook os) lqjackleee agent,application">
+              <td class="rank">190</td>
+              <td class="project"><strong>NeuraDesk MCN Incubation Agent (MCN Playbook OS)</strong><span>lqjackleee</span></td>
+              <td>Agent,Application</td>
+              <td class="num strong">13</td>
+              <td class="num muted">13</td>
+              <td class="num gold">0</td>
+              <td class="num">0.18</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">17.4</td>
+              <td class="num total">17.58</td>
+              <td class="links"><a href="https://gateway.datapro.asia/apps/mcn-incubation?v=2026.06.05.11" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/lqjack/llm-gateway" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="salesflow ai-powered crm system ousheng54 application">
+              <td class="rank">191</td>
+              <td class="project"><strong>Salesflow AI-Powered CRM System</strong><span>ousheng54</span></td>
+              <td>Application</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">17.4</td>
+              <td class="num total">17.45</td>
+              <td class="links"><a href="https://salesflow-crm-demo.vercel.app/login" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/xianjianshenqu/-mac-SalesFlow-CRM" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="mrumray shawn application">
+              <td class="rank">192</td>
+              <td class="project"><strong>MrumRay</strong><span>Shawn</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">17.3</td>
+              <td class="num total">17.4</td>
+              <td class="links"><a href="https://www.murmray.com/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Minf97/murmray" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="talentx trial ground tomatoes1 skill">
+              <td class="rank">193</td>
+              <td class="project"><strong>TalentX Trial Ground</strong><span>Tomatoes1</span></td>
+              <td>Skill</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">17.3</td>
+              <td class="num total">17.38</td>
+              <td class="links"><a href="https://1724048d-b9bc-4397-afa5-3e1f8378655d.dev.coze.site/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/TalentX-Lab/talentx-trialground" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="glow concierge kiara agent,skill">
+              <td class="rank">194</td>
+              <td class="project"><strong>Glow Concierge</strong><span>Kiara</span></td>
+              <td>Agent,Skill</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">17.1</td>
+              <td class="num total">17.17</td>
+              <td class="links"><a href="https://glowcoach-gk7bofwy.manus.space/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Kiarachandru29/Theglowconcierge" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="reverra lyurara application">
+              <td class="rank">195</td>
+              <td class="project"><strong>Reverra</strong><span>lyurara</span></td>
+              <td>Application</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">16.9</td>
+              <td class="num total">16.98</td>
+              <td class="links"><a href="https://github.com/lyurara/reverra" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/lyurara/reverra" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="product-shots whiletrue0x skill">
+              <td class="rank">196</td>
+              <td class="project"><strong>product-shots</strong><span>whiletrue0x</span></td>
+              <td>Skill</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">16.2</td>
+              <td class="num total">16.31</td>
+              <td class="links"><a href="https://github.com/motiful/product-shots" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/motiful/product-shots" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="a project chickenriceorfriedrice application">
+              <td class="rank">197</td>
+              <td class="project"><strong>A Project</strong><span>chickenriceorfriedrice</span></td>
+              <td>Application</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">16.1</td>
+              <td class="num total">16.21</td>
+              <td class="links"><a href="https://n8n-test-idk.zeabur.app/signup?token=[redacted]" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/aki2457" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="https://credmesh.xyz/ jc agent">
+              <td class="rank">198</td>
+              <td class="project"><strong>https://credmesh.xyz/</strong><span>JC</span></td>
+              <td>Agent</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">16</td>
+              <td class="num total">16.05</td>
+              <td class="links"><a href="https://www.youtube.com/watch?v=3HnUh2SyuHU&amp;feature=youtu.be" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/unbrained-labs" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="catach adityaarya1021 application">
+              <td class="rank">199</td>
+              <td class="project"><strong>Catach</strong><span>adityaarya1021</span></td>
+              <td>Application</td>
+              <td class="num strong">8</td>
+              <td class="num muted">8</td>
+              <td class="num gold">0</td>
+              <td class="num">0.11</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">15.7</td>
+              <td class="num total">15.81</td>
+              <td class="links"><a href="https://adiarya05.github.io/Catch/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/AdiArya05/Catch" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="vectorx ai goldminer8431 application">
+              <td class="rank">200</td>
+              <td class="project"><strong>VectorX AI</strong><span>Goldminer8431</span></td>
+              <td>Application</td>
+              <td class="num strong">7</td>
+              <td class="num muted">7</td>
+              <td class="num gold">0</td>
+              <td class="num">0.1</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">15.7</td>
+              <td class="num total">15.8</td>
+              <td class="links"><a href="https://youtu.be/NRGaogxz1Qs" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/VECTORXAI" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="einclaw arvinchen application,agent">
+              <td class="rank">201</td>
+              <td class="project"><strong>EinClaw</strong><span>arvinchen</span></td>
+              <td>Application,Agent</td>
+              <td class="num strong">14</td>
+              <td class="num muted">14</td>
+              <td class="num gold">0</td>
+              <td class="num">0.19</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">15.1</td>
+              <td class="num total">15.29</td>
+              <td class="links"><a href="https://youtu.be/flfSrfKKzGg" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="flownote ai sssupremeley agent">
+              <td class="rank">202</td>
+              <td class="project"><strong>FlowNote AI</strong><span>sssupremeley</span></td>
+              <td>Agent</td>
+              <td class="num strong">5</td>
+              <td class="num muted">5</td>
+              <td class="num gold">0</td>
+              <td class="num">0.07</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">15.1</td>
+              <td class="num total">15.17</td>
+              <td class="links"><a href="https://ghostla.com.cn" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/supremeley/FlowNote-AI" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="spirit realm dove application">
+              <td class="rank">203</td>
+              <td class="project"><strong>Spirit Realm</strong><span>Dove</span></td>
+              <td>Application</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">14.3</td>
+              <td class="num total">14.38</td>
+              <td class="links"><a href="https://lingjing-app-demo.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Roc-Dove" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="oiiocare-a gentle appetite and mood companion app orangehasacorgi application">
+              <td class="rank">204</td>
+              <td class="project"><strong>oiioCare-A gentle appetite and mood companion app</strong><span>Orangehasacorgi</span></td>
+              <td>Application</td>
+              <td class="num strong">17</td>
+              <td class="num muted">17</td>
+              <td class="num gold">0</td>
+              <td class="num">0.23</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">13.9</td>
+              <td class="num total">14.13</td>
+              <td class="links"><a href="https://oiiocare-com-rv5t.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/Didiisacorgi/oiiocare.com" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="q-timer niniwangtange application">
+              <td class="rank">205</td>
+              <td class="project"><strong>Q-Timer</strong><span>niniwangtange</span></td>
+              <td>Application</td>
+              <td class="num strong">6</td>
+              <td class="num muted">6</td>
+              <td class="num gold">0</td>
+              <td class="num">0.08</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">12.7</td>
+              <td class="num total">12.78</td>
+              <td class="links"><a href="https://q-timer.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/TangeRings/QTimer" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr>
+            <tr data-search="project pulse lowchengjun230 application">
+              <td class="rank">206</td>
+              <td class="project"><strong>Project Pulse</strong><span>lowchengjun230</span></td>
+              <td>Application</td>
+              <td class="num strong">4</td>
+              <td class="num muted">4</td>
+              <td class="num gold">0</td>
+              <td class="num">0.05</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num">12.6</td>
+              <td class="num total">12.65</td>
+              <td class="links"><a href="https://github.com/users/eugcj/projects/2/views/1" target="_blank" rel="noopener noreferrer">Demo</a><a href="https://github.com/users/eugcj/projects/2/views/1" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+            </tr></tbody>
+      </table>
+    </div>
+  </main>
+  <script>
+    const input = document.getElementById('search');
+    const rows = [...document.querySelectorAll('#ranking tbody tr')];
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      rows.forEach(row => row.style.display = !q || row.dataset.search.includes(q) ? '' : 'none');
+    });
+  </script>
+</body>
+</html>
