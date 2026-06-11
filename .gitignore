@@ -1,0 +1,26 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*~
+.idea/
+.vscode/
+
+# --- Safety: block raw data dumps that may contain others' personal data ---
+# Proof of the data exposure must be a REDACTED IMAGE, never a raw dump.
+# If you have a legitimate reason to include one of these, redact it and force-add.
+evidence/**/*.json
+evidence/**/*.csv
+evidence/**/*.har
+evidence/**/*.xlsx
+evidence/**/*.xls
+evidence/**/*.txt
+evidence/**/*.sql
+evidence/**/*.log
+
+# Staging area for raw, unredacted uploads — NEVER publish this folder.
+evidence/_INBOX/
+
+# Secrets (just in case)
+*.pem
+*.key
+.env
